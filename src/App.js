@@ -35,21 +35,19 @@ class App extends Component {
         .includes(searchfield.toLocaleLowerCase());
     });
 
-    if (!robots.length) {
-      return <h1>Loading...</h1>;
-    } else {
-      return (
-        <>
-          <div className="tc">
-            <h1 className="f1">RoboFirends</h1>
-            <SearchBox searchChange={this.onSearchChange} />
-            <Scroll>
-              <CardList robots={filteredRobots} />
-            </Scroll>
-          </div>
-        </>
-      );
-    }
+    return !robots.length ? (
+      <h1>Loading...</h1>
+    ) : (
+      <>
+        <div className="tc">
+          <h1 className="f1">RoboFirends</h1>
+          <SearchBox searchChange={this.onSearchChange} />
+          <Scroll>
+            <CardList robots={filteredRobots} />
+          </Scroll>
+        </div>
+      </>
+    );
   }
 }
 
