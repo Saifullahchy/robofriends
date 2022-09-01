@@ -1,6 +1,6 @@
 {
   "name": "robofriends",
-  "homepage": "https://Saifullahchy.github.io/robofriends",
+  "homepage": "https://saifullahchy.github.io/robofriends/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,12 +21,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,7 +34,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "5.12.0",
     "prettier": "^2.7.1",
     "react-scripts": "^5.0.0"
   }
